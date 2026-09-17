@@ -1,0 +1,10 @@
+eloria-perfumes/
+├── index.html            # Application SPA principale & conteneur des vues
+├── assets/
+│   ├── css/
+│   │   └── custom.css    # Surcharges typographiques et animations subtiles
+│   └── js/
+│       ├── app.js        # Point d'entrée principal & Router SPA
+│       ├── data.js       # Base de données fictive des produits ÉLORIA
+│       ├── store.js      # Gestionnaire d'état (Panier, Favoris, Filtres)
+│       └── components.js # Composants d'interface réutilisables (Header, Footer, Cards)

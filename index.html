@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÉLORIA | Haute Parfumerie & Soins d'Exception</title>
+    <meta name="description" content="Découvrez l'univers ÉLORIA. Des fragrances d'exception et des soins d'une élégance intemporelle.">
+    
+    <!-- Google Fonts: Cormorant Garamond (Serif Luxe) & Plus Jakarta Sans (Sans-serif Moderne) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS & DaisyUI CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- FontAwesome icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Configuration Tailwind & Custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'eloria-black': '#0F0F0F',
+                        'eloria-cream': '#FAF8F5',
+                        'eloria-beige': '#EFECE6',
+                        'eloria-gold': '#D4AF37',
+                        'eloria-gold-dark': '#AA8625',
+                        'eloria-gray': '#757575',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-eloria-cream text-eloria-black font-sans antialiased selection:bg-eloria-gold selection:text-white flex flex-col min-h-screen">
+
+    <!-- En-tête Global -->
+    <header id="header-container" class="sticky top-0 z-40 bg-eloria-cream/90 backdrop-blur-md border-b border-eloria-beige/60 transition-all duration-300"></header>
+
+    <!-- Conteneur Dynamic View (SPA) -->
+    <main id="app-view" class="flex-grow min-h-[60vh] transition-opacity duration-300"></main>
+
+    <!-- Drawer Panier -->
+    <div id="cart-drawer-container"></div>
+
+    <!-- Modale Recherche Globale -->
+    <div id="search-modal-container"></div>
+
+    <!-- Notification Toast -->
+    <div id="toast-container" class="toast toast-end z-50"></div>
+
+    <!-- Pied de Page Global -->
+    <footer id="footer-container" class="bg-eloria-black text-eloria-cream pt-16 pb-12"></footer>
+
+    <!-- Application Script -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>
